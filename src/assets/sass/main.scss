@@ -1,0 +1,21 @@
+@import 'print';
+@import 'mfb';
+
+.tile-content {
+    float:left;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+
+    img {
+        text-align: center;
+        width: 120px;
+    }
+}
+.group-list {
+    padding: 5px;
+    margin: 5px;
+}
