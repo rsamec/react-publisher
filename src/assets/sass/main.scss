@@ -19,3 +19,37 @@
     padding: 5px;
     margin: 5px;
 }
+.navbar {
+    margin-bottom: 0px;
+}
+.ModalBackdrop {
+    box-sizing: content-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    z-index: 9999;
+}
+.ModalBackdrop.hidden {
+    display: none;
+}
+.ModalContent {
+    //    box-sizing: content-box;
+    position: absolute;
+    //    width: 90%;
+    //    height:90%;
+    margin:20px;
+    padding: 22.5px 30px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.modal-body{
+    position:relative;
+    background-color: white;
+    height:100%;
+    width: 100%;
+}

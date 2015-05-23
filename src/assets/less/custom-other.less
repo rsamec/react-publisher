@@ -1,0 +1,32 @@
+.gradient (@startColor: #eee, @endColor: white) {
+    background-color: @startColor;
+    background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+    background: -webkit-linear-gradient(top, @startColor, @endColor);
+    background: -moz-linear-gradient(top, @startColor, @endColor);
+    background: -ms-linear-gradient(top, @startColor, @endColor);
+    background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
+    border-color: @border;
+
+    & > .panel-heading {
+        color: @heading-text-color;
+        .gradient(@heading-bg-color,lighten(@heading-bg-color,10%));
+        background-color: @heading-bg-color;
+        border-color: @heading-border;
+
+        + .panel-collapse > .panel-body {
+            border-top-color: @border;
+        }
+        .badge {
+            color: @heading-bg-color;
+            background-color: @heading-text-color;
+        }
+    }
+    & > .panel-footer {
+        + .panel-collapse > .panel-body {
+            border-bottom-color: @border;
+        }
+    }
+}

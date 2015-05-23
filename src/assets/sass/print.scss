@@ -9,23 +9,25 @@
 }
 .printView{
     background-color: lighten(gray,10);
-    padding: 10px;
+    padding: 20px;
 }
-//.watermark div.cPage {
-//    &:before {
-//        display: inline-block;
-//        opacity: 0.25;
-//        font-size: 3em;
-//        color:red;
-//        width: 100%;
-//        text-align: right;
-//        z-index: 1000;
-//        content: 'uncompleted';
-//        -webkit-transform: rotate(45deg);
-//    }
-//
-//}
+ div.errorFlag {
+    &:before {
+        display: inline-block;
+        opacity: 0.25;
+        font-size: 3em;
+        color:red;
+        width: 100%;
+        text-align: right;
+        z-index: 1000;
+        content: 'uncompleted';
+        -webkit-transform: rotate(45deg);
+    }
 
+}
+.cBox{
+    position: absolute;
+}
 
 .cPageOuter {
     BORDER-RIGHT: gray 1px solid;
@@ -39,4 +41,18 @@
     WIDTH: 210mm;
     HEIGHT: 297mm;
     BACKGROUND-COLOR: #ffffff;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #section-to-print, #section-to-print * {
+        visibility: visible;
+    }
+    #section-to-print {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }

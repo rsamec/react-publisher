@@ -7,7 +7,21 @@
 
 .printView {
   background-color: #9a9a9a;
-  padding: 10px; }
+  padding: 20px; }
+
+div.errorFlag:before {
+  display: inline-block;
+  opacity: 0.25;
+  font-size: 3em;
+  color: red;
+  width: 100%;
+  text-align: right;
+  z-index: 1000;
+  content: 'uncompleted';
+  -webkit-transform: rotate(45deg); }
+
+.cBox {
+  position: absolute; }
 
 .cPageOuter {
   BORDER-RIGHT: gray 1px solid;
@@ -22,6 +36,17 @@
   HEIGHT: 297mm;
   BACKGROUND-COLOR: #ffffff; }
 
+@media print {
+  body * {
+    visibility: hidden; }
+
+  #section-to-print, #section-to-print * {
+    visibility: visible; }
+
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0; } }
 /**
  * CONTENTS
  *
@@ -672,5 +697,35 @@
 .group-list {
   padding: 5px;
   margin: 5px; }
+
+.navbar {
+  margin-bottom: 0px; }
+
+.ModalBackdrop {
+  box-sizing: content-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+  z-index: 9999; }
+
+.ModalBackdrop.hidden {
+  display: none; }
+
+.ModalContent {
+  position: absolute;
+  margin: 20px;
+  padding: 22.5px 30px;
+  background-color: white;
+  border-radius: 4px; }
+
+.modal-body {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
