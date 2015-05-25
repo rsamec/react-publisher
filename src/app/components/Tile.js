@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 let Tile = React.createClass({
     render() {
-        var src = '/assets/images/' + this.props.params.name + '.png';
+        var src = 'assets/images/' + this.props.params.name + '.png';
 
         return (
 

@@ -32,7 +32,7 @@ let InputViewModal = React.createClass({
         var title = this.props.schema.title || 'Unknown title';
         return (
             <Modal {...this.props} bsSize="large" title={title} animation={false}>
-                <div className='modal-input' className='modal-body'>
+                <div className='modal-body modal-input'>
                     <BootstrapPublisher widgets={widgets} schema={schema} rules={businessRules} dataContext={this.props.dataContext} />
                 </div>
                 <div className='modal-footer'>
@@ -80,7 +80,7 @@ let PrintView = React.createClass({
                 }
             }.bind(this),
             function (err) {
-                console.log(error)
+                //console.log(error)
             });
     },
     //captureAndDisplay(){

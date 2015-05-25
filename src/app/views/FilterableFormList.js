@@ -1,10 +1,10 @@
 import React from 'react';
 
 import SearchBar from '../components/SearchBar.js';
-import FormGroupList from '../components/FormGroupList.js';
+import FormList from '../components/FormList.js';
 import formService from '../services/formService.js';
 
-let FilterableFormGroupList = React.createClass({
+let FilterableFormList = React.createClass({
     getInitialState: function () {
         return {
             filterText: '',
@@ -34,16 +34,27 @@ let FilterableFormGroupList = React.createClass({
     render() {
         return (
             <div>
-                <div style={{margin:'10px'}}>
-                    <SearchBar filterText={this.state.filterText} onUserInput={this.handleUserInput} />
+                <div className="container banner">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div className="banner-title center-text">
+                                    <h1 >Reactive documents for everybody.</h1>
+                                    <p>
+                                        <SearchBar filterText={this.state.filterText} onUserInput={this.handleUserInput} />
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <hr />
-                <FormGroupList filterText={this.state.filterText} formGroups={this.state.schemaList} />
+                <FormList filterText={this.state.filterText} forms={this.state.schemaList} />
             </div>
         );
     }
 });
 
 
-export default FilterableFormGroupList;
+export default FilterableFormList;

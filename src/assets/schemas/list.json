@@ -1,102 +1,62 @@
 [
     {
-        "name": "Contracts",
-        "items": [
-            {
-                "name": "EmployeeContract",
-                "label": "Employee contract",
-                "input": true
-            },
-            {
-                "name": "ServiceContract",
-                "label": "Service contract",
-                "input": true
-            },
-            {
-                "name": "SimpleInvoice",
-                "label": "Simple invoice",
-                "input": true
-            },
-            {
-                "name": "ParagraphGuide",
-                "label": "Paragraph guide",
-                "input": false
-            },
-            {
-                "name": "EmployeeContract",
-                "label": "Employee contract",
-                "input": true
-            },
-            {
-                "name": "ServiceContract",
-                "label": "Service contract",
-                "input": true
-            },
-            {
-                "name": "EmployeeContract",
-                "label": "Employee contract",
-                "input": true
-            },
-            {
-                "name": "ServiceContract",
-                "label": "Service contract",
-                "input": true
-            },
-            {
-                "name": "EmployeeContract",
-                "label": "Employee contract",
-                "input": true
-            },
-            {
-                "name": "ServiceContract",
-                "label": "Service contract",
-                "input": true
-            },
-            {
-                "name": "EmployeeContract",
-                "label": "Employee contract",
-                "input": true
-            },
-            {
-                "name": "ServiceContract",
-                "label": "Service contract",
-                "input": true
-            }
-        ]
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
     },
     {
-        "name": "Invoices",
-        "items": [
-            {
-                "name": "SimpleInvoice",
-                "label": "Simple invoice",
-                "input": true
-            },
-            {
-                "name": "ColorInvoice",
-                "label": "Color invoice",
-                "input": true
-            }
-        ]
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
     },
     {
-        "name": "Guides",
-        "items": [
-            {
-                "name": "ReactDesignerGuide",
-                "label": "React designer guide",
-                "input": false
-            },
-            {
-                "name": "CookingGuide",
-                "label": "Cooking guide",
-                "input": false
-            },
-            {
-                "name": "ParagraphGuide",
-                "label": "Paragraph guide",
-                "input": false
-            }
-        ]
+        "name": "SimpleInvoice",
+        "label": "Simple invoice",
+        "input": true
+    },
+    {
+        "name": "ParagraphGuide",
+        "label": "Paragraph guide",
+        "input": false
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
     }
 ]

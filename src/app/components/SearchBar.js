@@ -8,11 +8,11 @@ let SearchBar = React.createClass({
     },
     render: function () {
         return (
-            <div class="input-group">
-                <input type="text" value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} class="form-control" placeholder="Search for..." />
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" onClick={this.handleChange}>Go!</button>
-                </span>
+            <div className="input-group">
+                <input type="text" value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} className="form-control" placeholder="Search for..." />
+                <div className="input-group-btn">
+                    <button className="btn btn-default" type="submit"><i className="glyphicon glyphicon-search"></i></button>
+                </div>
             </div>
         );
     }
