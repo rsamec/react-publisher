@@ -22,6 +22,8 @@ _.each(['Input','Button', 'Panel','Glyphicon','Tooltip','Alert','Label'],functio
     widgets[name] = ReactBootstrap[widgetName];
 });
 
+widgets['ChartistGraph'] = require('react-chartist');
+
 
 let InputViewModal = React.createClass({
 
