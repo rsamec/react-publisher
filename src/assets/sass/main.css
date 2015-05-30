@@ -682,6 +682,9 @@ div.errorFlag:before {
 /**
  * Apply this class to the html tag when developing the slide-in button
  */
+.main-content {
+  margin-top: 50px; }
+
 .tile-content {
   float: left;
   width: 130px;
@@ -693,6 +696,16 @@ div.errorFlag:before {
   .tile-content img {
     text-align: center;
     width: 120px; }
+
+.tile-title {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 120px;
+  text-overflow: clip; }
+
+.tile-tooltip {
+  margin: 10px;
+  position: absolute; }
 
 .group-list {
   padding: 5px;

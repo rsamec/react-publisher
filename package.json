@@ -5,6 +5,7 @@
     "business-rules-engine": "^1.2.7",
     "promise": "^7.0.1",
     "react-binding": "^0.6.0",
+    "react-bootstrap": "^0.23.0",
     "react-chartist": "^0.5.1",
     "react-designer-widgets": "^0.1.10",
     "react-mfb": "^0.2.0",

@@ -1,6 +1,9 @@
 @import 'print';
 @import 'mfb';
 
+.main-content{
+    margin-top: 50px;
+}
 .tile-content {
     float:left;
     width: 130px;
@@ -14,6 +17,17 @@
         text-align: center;
         width: 120px;
     }
+}
+.tile-title{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 120px;
+    text-overflow:clip;
+}
+.tile-tooltip {
+
+    margin: 10px;
+    position:absolute;
 }
 .group-list {
     padding: 5px;

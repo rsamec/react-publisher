@@ -14,7 +14,7 @@ let App = React.createClass({
             <div>
                 <header>
                     <div className="navbar-wrapper">
-                        <nav className="navbar navbar-inverse navbar-static-top">
+                        <nav className="navbar navbar-inverse navbar-fixed-top">
                             <div className="navbar-header">
                                 <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                     <span className="sr-only">Toggle navigation</span>
@@ -37,8 +37,9 @@ let App = React.createClass({
                         </nav>
                     </div>
                 </header>
-
-                <RouteHandler/>
+                <div className="main-content">
+                    <RouteHandler/>
+                </div>
             </div>
 
         );
