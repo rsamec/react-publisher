@@ -6,7 +6,7 @@ import {Modal,ModalTrigger,Button} from 'react-bootstrap';
 
 //business-rules-engine
 import FormSchema from 'business-rules-engine/commonjs/FormSchema';
-import {HtmlPagesRenderer,PDFPagesTrigger,BootstrapPublisher} from 'react-page-renderer';
+import {HtmlPagesRenderer,BootstrapPublisher} from 'react-page-renderer';
 import WidgetFactory from 'react-designer-widgets';
 import formService from '../services/formService.js';
 
@@ -51,7 +51,8 @@ let PrintView = React.createClass({
     },
     getInitialState() {
         return {
-            loaded: false
+            loaded: false,
+            data :{}
         }
     },
     componentDidMount() {
@@ -85,14 +86,26 @@ let PrintView = React.createClass({
                 //console.log(error)
             });
     },
-    //captureAndDisplay(){
-    //    html2canvas(this.getDOMNode().children[1], {
-    //        onrendered: function(canvas) {
-    //            window.open(canvas.toDataURL("image/png"));
-    //        }
-    //    });
-    //},
     print(){window.print()},
+    pdf(){
+        var url = '';//http://localhost:8080';
+        var name = this.context.router.getCurrentParams().name;
+
+        var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance
+        xmlhttp.open("POST", url + '/print/' + name);
+        xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xmlhttp.responseType = 'arraybuffer';
+
+        xmlhttp.onreadystatechange=function()
+        {
+            if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                var blob = new Blob([xmlhttp.response], {type: 'application/pdf'});
+                var fileURL = URL.createObjectURL(blob);
+                window.open(fileURL);
+            }
+        };
+        xmlhttp.send(JSON.stringify(this.state.data));
+    },
     render() {
 
         if (!this.state.loaded) return (<div>Loading ...</div>);
@@ -121,16 +134,14 @@ let PrintView = React.createClass({
                         label="Fill in data"
                     />
                 </ModalTrigger>
-                <PDFPagesTrigger schema={printSchema} data={this.state.data}>
                     <ChildButton
                         icon="ion-share"
                         label="Export to PDF"
+                        onClick={this.pdf}
                     />
-                </PDFPagesTrigger>
-
             </Menu>
             <div id="preview">
-                <HtmlPagesRenderer  widgets={widgets} schema={printSchema} dataContext={dataContext} errorFlag={hasErrors} />
+                <HtmlPagesRenderer  widgets={widgets} schema={printSchema} data={this.state.data} errorFlag={hasErrors} />
             </div>
         </div>);
     }
