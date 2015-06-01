@@ -6,7 +6,9 @@ import Tile from './Tile.js';
 let FormList = React.createClass({
     render() {
         var filterText = this.props.filterText;
-        var forms = this.props.forms;
+
+        var forms = this.props.showInput?this.props.forms:_.filter(this.props.forms,function(form){return !form.input});
+
         if (filterText !== undefined && filterText !== "") {
             forms = _.filter(forms, function (form) {
                 return form.name.toLowerCase().indexOf(filterText.toLowerCase()) !== -1

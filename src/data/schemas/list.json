@@ -1,0 +1,62 @@
+[
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract ajsdk fjasdj kasj fjasdfja",
+        "input": false
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": false
+    },
+    {
+        "name": "SimpleInvoice",
+        "label": "Simple invoice",
+        "input": false
+    },
+    {
+        "name": "ParagraphGuide",
+        "label": "Paragraph guide",
+        "input": false
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    },
+    {
+        "name": "EmployeeContract",
+        "label": "Employee contract",
+        "input": true
+    },
+    {
+        "name": "ServiceContract",
+        "label": "Service contract",
+        "input": true
+    }
+]

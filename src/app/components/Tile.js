@@ -14,7 +14,7 @@ let Tile = React.createClass({
     //    this.setState({show:false})
     //},
     render() {
-        var src = 'assets/images/' + this.props.params.name + '.png';
+        var src = '/data/images/' + this.props.params.name + '.png';
 
         //var style = {display:this.state.show?'':'none'};
         return (

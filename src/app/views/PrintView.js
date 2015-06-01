@@ -23,7 +23,7 @@ _.each(['Input','Button', 'Panel','Glyphicon','Tooltip','Alert','Label'],functio
 });
 
 widgets['ChartistGraph'] = require('react-chartist');
-
+widgets['react-inlinesvg'] = require('react-inlinesvg');
 
 let InputViewModal = React.createClass({
 

@@ -8,12 +8,14 @@ let FilterableFormList = React.createClass({
     getInitialState: function () {
         return {
             filterText: '',
+            showInput:false,
             schemaList:[]
         };
     },
-    handleUserInput: function (filterText) {
+    handleUserInput: function (filterText, showInput) {
         this.setState({
-            filterText: filterText
+            filterText: filterText,
+            showInput:showInput
         });
     },
     componentDidMount() {
@@ -41,7 +43,7 @@ let FilterableFormList = React.createClass({
                                 <div className="banner-title center-text">
                                     <h1 >Reactive documents for everybody.</h1>
                                     <p>
-                                        <SearchBar filterText={this.state.filterText} onUserInput={this.handleUserInput} />
+                                        <SearchBar filterText={this.state.filterText} showInput={this.state.showInput}  onUserInput={this.handleUserInput} />
                                     </p>
                                 </div>
                             </div>
@@ -50,7 +52,7 @@ let FilterableFormList = React.createClass({
                 </div>
 
                 <hr />
-                <FormList filterText={this.state.filterText} forms={this.state.schemaList} />
+                <FormList filterText={this.state.filterText} showInput={this.state.showInput} forms={this.state.schemaList} />
             </div>
         );
     }

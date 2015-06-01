@@ -29,4 +29,5 @@ class formService {
 
 }
 
-export default new formService('assets/schemas/');
+//export default new formService('assets/schemas/');
+export default new formService('/data/schemas/');
