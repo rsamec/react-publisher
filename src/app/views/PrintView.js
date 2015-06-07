@@ -24,6 +24,7 @@ _.each(['Input','Button', 'Panel','Glyphicon','Tooltip','Alert','Label'],functio
 
 widgets['ChartistGraph'] = require('react-chartist');
 widgets['react-inlinesvg'] = require('react-inlinesvg');
+widgets['React.Griddle'] = require('griddle-react');
 
 let InputViewModal = React.createClass({
 
@@ -117,7 +118,8 @@ let PrintView = React.createClass({
             pos = 'br',
             method = 'hover';
 
-        var hasErrors = this.state.rules !== undefined?this.state.rules.Validate(this.state.data).HasErrors:false;
+        var errors = this.state.rules !== undefined?this.state.rules.Validate(this.state.data):undefined;
+        var hasErrors = errors !== undefined?errors.HasErrors:false;
 
 
         return (<div className='printView'>
@@ -141,7 +143,7 @@ let PrintView = React.createClass({
                     />
             </Menu>
             <div id="preview">
-                <HtmlPagesRenderer  widgets={widgets} schema={printSchema} data={this.state.data} errorFlag={hasErrors} />
+                <HtmlPagesRenderer  widgets={widgets} schema={printSchema} data={this.state.data} dataContext={dataContext} errors={errors} errorFlag={hasErrors} />
             </div>
         </div>);
     }

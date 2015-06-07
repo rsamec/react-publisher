@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "dependencies": {
     "business-rules-engine": "^1.2.7",
+    "griddle-react": "^0.2.13",
     "promise": "^7.0.1",
     "react-binding": "^0.6.0",
     "react-bootstrap": "^0.23.0",
     "react-chartist": "^0.5.1",
-    "react-designer-widgets": "^0.1.16",
+    "react-designer-widgets": "^0.1.23",
     "react-inlinesvg": "^0.4.1",
     "react-mfb": "^0.2.0",
-    "react-page-renderer": "0.0.20",
+    "react-page-renderer": "0.0.21",
     "react-pivot": "^1.11.1",
     "superagent": "^1.2.0",
     "underscore": "^1.8.3"
