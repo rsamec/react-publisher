@@ -39,6 +39,17 @@ li ol > li {
 li ol > li:before {
   content: counters(item,".") " "; }
 
+@media print {
+  body * {
+    visibility: hidden; }
+
+  #section-to-print, #section-to-print * {
+    visibility: visible; }
+
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0; } }
 /**
  * CONTENTS
  *
@@ -739,5 +750,9 @@ li ol > li:before {
 
 .document-list {
   margin: 20px; }
+
+.tangle-text {
+  color: darkblue;
+  border-bottom: 1px dashed black !important; }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,10 +8,11 @@
     "react-binding": "^0.6.0",
     "react-bootstrap": "^0.23.0",
     "react-chartist": "^0.5.1",
-    "react-designer-widgets": "^0.1.23",
+    "react-designer-widgets": "^0.1.30",
     "react-inlinesvg": "^0.4.1",
     "react-mfb": "^0.2.0",
-    "react-page-renderer": "0.0.21",
+    "react-movie-select": "^0.1.8",
+    "react-page-renderer": "0.0.25",
     "react-pivot": "^1.11.1",
     "superagent": "^1.2.0",
     "underscore": "^1.8.3"

@@ -1,10 +1,10 @@
 # react-publisher
 
-React publisher is application that publishes content created by [react-designer](http://hand-formvalidation.rhcloud.com/designer).
+[react-publisher](http://hand-formvalidation.rhcloud.com/publisher) is application that publishes content created by [react-designer](http://hand-formvalidation.rhcloud.com/designer).
 
 It enables to view, fill in and preview and print documents and it enables to generate to pdf.
 
-You can see [react-publisher](http://hand-formvalidation.rhcloud.com/publisher) and browse all documents from [documents gallery](http://hand-formvalidation.rhcloud.com/publisher).
+You can browse all example documents from [documents gallery](http://hand-formvalidation.rhcloud.com/publisher).
 
 
 ## Features

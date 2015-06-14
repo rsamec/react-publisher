@@ -58,5 +58,16 @@
         "name": "ServiceContract",
         "label": "Service contract",
         "input": true
+    },
+    {
+        "name": "Intl",
+        "label": "Intern",
+        "input": false
+    },
+    {
+        "name": "Parks",
+        "label": "State parks",
+        "input": false
     }
+
 ]
