@@ -68,6 +68,12 @@
         "name": "Parks",
         "label": "State parks",
         "input": false
+    },
+    {
+        "name": "Math",
+        "label": "Math",
+        "input": false
     }
+
 
 ]
