@@ -13,6 +13,7 @@ import formService from '../services/formService.js';
 import _ from 'underscore';
 import ReactBootstrap from 'react-bootstrap';
 import MovieSelect from 'react-movie-select';
+import Chart from 'react-pathjs-chart';
 
 //get print widgets
 var widgets = new WidgetFactory().getWidgets();
@@ -23,10 +24,15 @@ _.each(['Input','Button', 'Panel','Glyphicon','Tooltip','Alert','Label'],functio
     widgets[name] = ReactBootstrap[widgetName];
 });
 
+widgets['Chart.Pie'] = Chart.Pie;
+widgets['Chart.SmoothLine'] = Chart.SmoothLineVivus;
+widgets['Chart.Tree'] = Chart.Tree;
+
 widgets['ChartistGraph'] = require('react-chartist');
 widgets['react-inlinesvg'] = require('react-inlinesvg');
 widgets['React.Griddle'] = require('griddle-react');
 widgets['MovieSelect'] = require('react-movie-select');
+
 
 let InputViewModal = React.createClass({
 

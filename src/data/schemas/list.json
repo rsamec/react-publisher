@@ -73,6 +73,11 @@
         "name": "Math",
         "label": "Math",
         "input": false
+    },
+      {
+        "name": "PathJs",
+        "label": "PathJs",
+        "input": false
     }
 
 
