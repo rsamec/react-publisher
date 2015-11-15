@@ -1,5 +1,6 @@
 # react-publisher
-__Warning:__ This project was moved to [react-page-renderer](ttps://github.com/rsamec/react-page-renderer).
+
+__Warning:__ This project was moved to [react-page-renderer](https://github.com/rsamec/react-page-renderer).
 
 [react-publisher](http://react-documets.rhcloud.com/publisher) is application that publishes content created by [react-designer](http://hand-formvalidation.rhcloud.com/designer).
 
